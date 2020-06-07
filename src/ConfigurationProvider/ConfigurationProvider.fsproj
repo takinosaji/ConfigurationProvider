@@ -5,7 +5,16 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="Library.fs"/>
+        <Compile Include="Converter.fs" />
+        <Compile Include="Models.fs" />
+        <Compile Include="Composition\IConfigurationObjectComposer.fs" />
+        <Compile Include="Composition\ActivatorObjectComposer.fs" />
+        <Compile Include="Eligibility\IEligiblePropertyExtractor.fs" />
+        <Compile Include="Eligibility\CustomAttributeMemberInfoExtractor.fs" />
+        <Compile Include="PropertyProvider\IConfigurationPropertyProvider.fs" />
+        <Compile Include="PropertyProvider\EnvironmentVariablePropertyProvider.fs" />
+        <Compile Include="IAsyncConfigurationProvider.fs" />
+        <Compile Include="DefaultAsyncConfigurationProvider.fs" />
     </ItemGroup>
 
 </Project>
