@@ -2,6 +2,7 @@
  
     open System
     
+    open ConfigurationProvider.MemberInfoExtensions
     open ConfigurationProvider.Converter
     open ConfigurationProvider.Composition
 
@@ -16,6 +17,6 @@
                                         configProperty.MemberInfo.Name))
                     let memberType = configProperty.MemberInfo.GetMemberType()
                     let convertedValue = configProperty.PropertyValue.Convert memberType
-                    configProperty.MemberInfo.SetValue(instance, convertedValue)
+                    configProperty.MemberInfo.SetValue {| Target = instance; Value = convertedValue |}
                 instance
 

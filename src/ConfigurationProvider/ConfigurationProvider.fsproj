@@ -5,6 +5,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <Compile Include="MemberInfoExtensions.fs" />
         <Compile Include="Converter.fs" />
         <Compile Include="Models.fs" />
         <Compile Include="Composition\IConfigurationObjectComposer.fs" />
